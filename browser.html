@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="stylesheet" src="style.css">
+    <script src="//http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="browser.js"></script>
+    <script src="https://togetherjs.com/togetherjs-min.js"></script>
+  </head>
+  <body>
+
+    <h1>File Browser</h1>
+
+    <form method="GET" id="session-form">
+      <fieldset>
+        <legend>Session ID</legend>
+        <input id="session-id" type="text" style="width: 10em">
+      </fieldset>
+    </form>
+
+    <ul id="file-list">
+    </ul>
+
+    <div style="display: none">
+      <li id="file-template"><a href="#" class="file"></a></li>
+    </div>
+
+  </body>
+</html>

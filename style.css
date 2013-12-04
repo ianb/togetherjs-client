@@ -1,0 +1,9 @@
+body {
+    font-family: sans-serif;
+}
+
+#file-list li {
+    list-style-type: none;
+    border-bottom: 1px solid #999;
+    margin-bottom: 0.3em;
+}
