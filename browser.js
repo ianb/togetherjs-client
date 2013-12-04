@@ -41,9 +41,16 @@ window.TogetherJSConfig = {
 $(function () {
 
   $("#session-form").on("submit", function () {
+    var sessionId = $("#session-id").val();
+    if (sessionId.search(/togetherjs=/) != -1) {
+      sessionId = sessionId.replace(/.*togetherjs=/, "");
+    }
+    TogetherJS.require("session").close();
     var href = location.href + "";
     href = href.replace(/#.*/, "");
-    href += "#&togetherjs=" + $("#session-id").val();
+    href = href.replace(/\?.*/, "");
+    href = href + "?bust=" + Date.now();
+    href += "#&togetherjs=" + sessionId;
     location.href = href;
     return false;
   });
