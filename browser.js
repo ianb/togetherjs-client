@@ -9,7 +9,7 @@ window.TogetherJSConfig = {
     }
   },
 
-  hub: {
+  hub_on: {
     "browse": function (msg) {
       $("#file-list").empty();
       var tmpl = $("#file-template").clone();
