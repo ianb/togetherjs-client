@@ -1,10 +1,12 @@
 window.TogetherJSConfig = {
 
-  on_ready: function () {
-    $("#session-id").val(TogetherJS.require("session").shareId);
-    TogetherJS.send({
-      type: "browser-hello"
-    });
+  on: {
+    ready: function () {
+      $("#session-id").val(TogetherJS.require("session").shareId);
+      TogetherJS.send({
+        type: "browser-hello"
+      });
+    }
   },
 
   hub: {
