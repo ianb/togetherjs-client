@@ -30,7 +30,8 @@ window.TogetherJSConfig = {
     }
   },
 
-  autoStart: true
+  autoStart: true,
+  suppressJoinConfirmation: true
 
 };
 
